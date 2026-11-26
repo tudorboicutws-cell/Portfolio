@@ -1,0 +1,19 @@
+# Fișiere video și audio mari (pune-le pe YouTube/Vimeo și folosește un embed,
+# sau comprimă-le sub ~20 MB și scoate-le de aici dacă vrei să le urci)
+*.mov
+*.wav
+*.mkv
+*.avi
+*.drp
+*.drt
+*.psd
+*.aep
+
+# Fișiere de sistem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fișiere temporare
+*.tmp
+~$*
