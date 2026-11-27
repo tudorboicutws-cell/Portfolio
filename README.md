@@ -1,6 +1,6 @@
 # Portfolio
 
-Portofoliul lui Tudor: video, animație, design și copywriting.
+Portofoliul lui Tudor Boicu: 3D environment, game art, graphic design și visual storytelling.
 
 **Nu știi GitHub? Citește [GHID-EDITARE.md](GHID-EDITARE.md): totul pas cu pas, doar din browser.**
 
