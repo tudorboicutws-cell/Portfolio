@@ -116,3 +116,13 @@ Pe pagina repo-ului apasă tasta **.** (punct). Se deschide un editor ca un prog
 3. Copiază răspunsul, editează fișierul pe GitHub (creionul ✏️), Ctrl + A, lipește, **Commit changes**.
 
 Cere mereu **fișierul întreg**, nu bucăți, ca să nu greșești la lipit.
+
+---
+
+## 10. Siguranță
+
+- Site-ul e doar pagini și poze (fără parole, plăți sau bază de date), deci nu are ce fi spart pe site. Oricine poate **vedea** codul (repo public), dar numai tu îl poți **schimba**.
+- Riscul real e contul. Pune **parolă unică** și **autentificare în doi pași**: Settings > Password and authentication > Enable two-factor authentication.
+- Nu pune pe site telefonul sau adresa.
+- **Verificare:** în repo apasă **Commits** (lângă butonul verde Code) ca să vezi fiecare modificare, cine și când. Ceva ce n-ai făcut tu? Schimbă parola imediat și revino la versiunea bună (pasul 6).
+- **Settings > Security log** arată toate logările și acțiunile de pe cont.
