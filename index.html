@@ -1,126 +1,243 @@
 <!doctype html>
-<html lang="ro">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tudor | Portofoliu</title>
-  <meta name="description" content="Portofoliu Tudor: video, animație, design și copywriting pentru marketing.">
+  <title>Tudor Boicu | Portfolio</title>
+  <meta name="description" content="Tudor Boicu: 3D environment artist, graphic designer and visual storyteller based in Iași, Romania.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="hero">
     <nav class="nav">
-      <span class="logo">Tudor</span>
+      <a class="logo" href="#"><img src="assets/img/logo-kon.png" alt="KON logo">Tudor Boicu</a>
       <ul>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#animatie">Animație</a></li>
-        <li><a href="#design">Design</a></li>
-        <li><a href="#copy">Copy</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
     <div class="hero-text">
-      <p class="eyebrow">Marketing &amp; conținut</p>
-      <h1>Salut, sunt Tudor.</h1>
-      <!-- DE COMPLETAT: 1-2 propoziții despre tine -->
-      <p class="lead">Fac Reels, animații, designuri și texte care aduc oameni la ușa unei afaceri. Aici sunt câteva dintre proiectele mele.</p>
-      <a class="btn" href="#contact">Hai să vorbim</a>
+      <p class="eyebrow">3D Environment Artist · Graphic Designer · Visual Storyteller</p>
+      <h1>I build worlds, from historic courts to game-ready props.</h1>
+      <p class="lead">Self-taught 3D artist and designer from Iași, Romania, with 6+ years in digital art, game assets, cultural heritage reconstruction and AI-assisted production.</p>
+      <div class="cta">
+        <a class="btn" href="#work">See my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
     </div>
   </header>
 
   <main>
 
-    <!-- ========== VIDEO ========== -->
-    <section id="video" class="section">
-      <h2>Video &amp; Reels</h2>
-      <p class="section-intro">Reels pentru Instagram, TikTok și Facebook: idee, filmare, montaj în DaVinci Resolve.</p>
+    <!-- ========== SELECTED WORK ==========
+         Pozele: pune fișierul în assets/img/ cu numele din src (ex: princely-court.jpg).
+         Dacă poza lipsește, cardul arată un fundal colorat. -->
+    <section id="work" class="section">
+      <h2>Selected work</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="on" data-f="all">All</button>
+        <button data-f="game">Game Art</button>
+        <button data-f="env">Environment</button>
+        <button data-f="design">Graphic Design</button>
+        <button data-f="story">Storytelling</button>
+      </div>
       <div class="grid">
-        <article class="card">
-          <!-- Înlocuiește cu: <video src="assets/video/nume.mp4" controls muted playsinline></video>
-               sau cu un embed YouTube/Instagram -->
-          <div class="media placeholder">Video</div>
-          <h3>Titlu proiect</h3>
-          <p>Ce ai făcut, pentru cine și ce rezultat a avut.</p>
+
+        <article class="card" data-cat="env">
+          <div class="media">
+            <img src="https://img.youtube.com/vi/omxjw_3AgFo/hqdefault.jpg" alt="3D reconstruction of the Princely Court of Iași" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="body">
+            <p class="tag">3D reconstruction · 3D printing</p>
+            <h3>The Moldavian Princely Court of Iași</h3>
+            <p>Five evolutionary stages of the Princely Court, modelled from historical research and prepared as multi-stage 3D prints for heritage display.</p>
+            <p class="links">
+              <a class="case" href="projects/princely-court.html">Case study →</a>
+              <a href="https://www.behance.net/gallery/157946701/The-Moldavian-Princely-Court-of-Iasi-Romania" target="_blank" rel="noopener">Behance</a>
+              <a href="https://www.youtube.com/watch?v=omxjw_3AgFo&amp;t=457s" target="_blank" rel="noopener">Video 1</a>
+              <a href="https://www.youtube.com/watch?v=yP37HX4ntzs&amp;t=1346s" target="_blank" rel="noopener">Video 2</a>
+            </p>
+          </div>
         </article>
-        <article class="card">
-          <div class="media placeholder">Video</div>
-          <h3>Titlu proiect</h3>
-          <p>Ce ai făcut, pentru cine și ce rezultat a avut.</p>
+
+        <article class="card" data-cat="env">
+          <div class="media">
+            <img src="assets/img/cultural-tourism.jpg" alt="360° virtual environment of historic Iași" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="body">
+            <p class="tag">VR · 360° environments</p>
+            <h3>Cultural Tourism in the Digital Age</h3>
+            <p>Five immersive story environments showing different historical eras of Iași, with interactive elements across 360° virtual spaces.</p>
+            <p class="links">
+              <a href="https://www.behance.net/gallery/182924709/Cultural-Tourism-in-the-Digital-Age" target="_blank" rel="noopener">Behance</a>
+              <a href="https://kuula.co/profile/IasiTravelAssociation/collections" target="_blank" rel="noopener">Kuula 360°</a>
+            </p>
+          </div>
         </article>
+
+        <article class="card" data-cat="game">
+          <div class="media">
+            <img src="assets/img/game-assets.jpg" alt="Game-ready 3D props" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="body">
+            <p class="tag">Game art · Unity / UE5</p>
+            <h3>3D Assets for Video Games</h3>
+            <p>Optimized, game-ready props and environment assets: efficient polycounts, clean UVs and realistic PBR materials for real-time rendering.</p>
+            <p class="links">
+              <a class="case" href="projects/game-props.html">Case study →</a>
+              <a href="https://www.artstation.com/btudor_kon/albums/11496291" target="_blank" rel="noopener">ArtStation</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="design">
+          <div class="media">
+            <img src="assets/img/product-branding.jpg" alt="Product packaging and branding mockups" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="body">
+            <p class="tag">Product branding · Print</p>
+            <h3>Product Branding &amp; Mockups</h3>
+            <p>Print-ready mockups, custom product branding and digital banners for national and international clients.</p>
+            <p class="links">
+              <a class="case" href="projects/product-branding.html">Case study →</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="story design">
+          <div class="media">
+            <img src="assets/img/knights-of-the-garden.jpg" alt="Illustrated map for The Knights of the Garden" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="body">
+            <p class="tag">Narrative design · Illustration · Cartography</p>
+            <h3>The Knights of the Garden</h3>
+            <p>A story-driven treasure hunt that turns the Botanical Garden of Iași into a medieval realm where plants become characters, guardians and guides.</p>
+            <p class="links">
+              <a href="https://www.behance.net/gallery/142787971/Spirits-of-the-Garden" target="_blank" rel="noopener">Behance</a>
+              <a href="https://questoapp.com/ro/iasi/garden-knights" target="_blank" rel="noopener">Questo</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="env story">
+          <div class="media">
+            <img src="assets/img/revive.jpg" alt="Projection mapping on a historic building" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="body">
+            <p class="tag">Projection mapping · Exhibition design</p>
+            <h3>REVIVE: Historic Towns</h3>
+            <p>International team building architectural projection mappings in Turku, Finland, followed by the rehabilitation of a museum display room at the Palace of Culture, Iași.</p>
+            <p class="links">
+              <a href="https://www.instagram.com/p/DKF-3fHC7qx/" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7251929945503875073/" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="design story">
+          <div class="media">
+            <img src="assets/img/heroes-parallel-fronts.jpg" alt="Outdoor historical information panel" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="body">
+            <p class="tag">Graphic design · Visual storytelling</p>
+            <h3>Heroes on Parallel Fronts</h3>
+            <p>Outdoor information panels along a WWII commemorative route through the Letea Forest and Rediu, built on archival research.</p>
+            <p class="links">
+              <a href="https://questoapp.com/ro/rediu-walking-tours/eroi-pe-fronturi-paralele-1" target="_blank" rel="noopener">Questo</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-cat="env">
+          <div class="media">
+            <img src="assets/img/cantemir-300.jpg" alt="3D model of a historic monastery" loading="lazy" onerror="this.remove()">
+          </div>
+          <div class="body">
+            <p class="tag">Architectural 3D · 3D printing</p>
+            <h3>Dimitrie Cantemir 300</h3>
+            <p>Detailed 3D models of historic monasteries across Iași, converted into high-detail 3D prints for a public exhibition.</p>
+            <p class="links">
+              <a href="https://www.facebook.com/traveltoiasi/posts/pfbid0gqzgDhYBm6WFqmhH5XPD74XyyfUxagAd68yZPvn2Ze63Qc8ze8Qje6vytcLrRBdul" target="_blank" rel="noopener">Facebook</a>
+            </p>
+          </div>
+        </article>
+
+      </div>
+      <p class="more">More on <a href="https://www.artstation.com/btudor_kon" target="_blank" rel="noopener">ArtStation</a> and <a href="https://www.behance.net/btudor_kon" target="_blank" rel="noopener">Behance</a>.</p>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div>
+          <p>I hold a Master's degree in Tourism and Spatial Geography, which shapes how I approach 3D: real-world lighting, environmental realism and spatial architecture. I have reconstructed historic landmarks for 3D printing, built VR heritage experiences, modelled props for mobile games and created marketing campaigns for brands.</p>
+          <p>Today I work as Marketing Assistant at Twinkle Star, a Cambridge Exam Centre in Iași, producing video, animation and design for multi-channel campaigns.</p>
+        </div>
+        <div class="skills">
+          <h3>3D &amp; game art</h3>
+          <p>Blender, Maya, SketchUp, V-Ray, Marmoset Toolbag, Substance Painter, RizomUV, Unity, Unreal Engine 5, 3D print prep</p>
+          <h3>Design &amp; video</h3>
+          <p>Photoshop, Illustrator, Figma, DaVinci Resolve, Clip Studio Paint, Lightroom, Aseprite</p>
+          <h3>Generative AI</h3>
+          <p>Runway, Luma, LTX Studio, MidJourney, ElevenLabs, Suno, Udio, ChatGPT, Claude</p>
+        </div>
       </div>
     </section>
 
-    <!-- ========== ANIMATIE ========== -->
-    <section id="animatie" class="section">
-      <h2>Animație</h2>
-      <p class="section-intro">Personaje și animații 2D, de exemplu mascota Steluța.</p>
-      <div class="grid">
-        <article class="card">
-          <div class="media placeholder">Animație</div>
-          <h3>Steluța intră în clasă</h3>
-          <p>Mini reel animat cu mascota școlii, construit pe bucăți (puppet) în DaVinci Fusion.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ========== DESIGN ========== -->
-    <section id="design" class="section">
-      <h2>Design</h2>
-      <p class="section-intro">Postări, afișe, coperți și materiale tipărite făcute în Canva.</p>
-      <div class="grid">
-        <article class="card">
-          <!-- Înlocuiește cu: <img src="assets/img/nume.jpg" alt="descriere"> -->
-          <div class="media placeholder">Imagine</div>
-          <h3>Titlu proiect</h3>
-          <p>Scurtă descriere.</p>
-        </article>
-        <article class="card">
-          <div class="media placeholder">Imagine</div>
-          <h3>Titlu proiect</h3>
-          <p>Scurtă descriere.</p>
-        </article>
-        <article class="card">
-          <div class="media placeholder">Imagine</div>
-          <h3>Titlu proiect</h3>
-          <p>Scurtă descriere.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ========== COPY ========== -->
-    <section id="copy" class="section">
-      <h2>Copywriting &amp; campanii</h2>
-      <p class="section-intro">Scripturi, reclame Meta, emailuri și campanii de înscriere.</p>
-      <div class="grid">
-        <article class="card text-card">
-          <h3>Titlu campanie</h3>
-          <p class="quote">„Un hook sau un fragment de text de care ești mândru.”</p>
-          <p>Contextul: pentru cine, pe ce canal, ce rezultat.</p>
-        </article>
-      </div>
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li><span class="when">2026 – now</span><strong>Marketing Assistant</strong> · Twinkle Star, Cambridge Exam Centre<p>Multi-channel marketing assets, video graphics and educational materials.</p></li>
+        <li><span class="when">2025 – 2026</span><strong>Project Manager</strong> · Silly Hat Ducks (freelance)<p>End-to-end development of an original board game: mechanics, narrative, team and manufacturing.</p></li>
+        <li><span class="when">2025</span><strong>3D Environment Artist</strong> · Orbital Ignition Interactive<p>Game-ready 3D props from 2D sketches for mobile games.</p></li>
+        <li><span class="when">2024 – 2025</span><strong>Storyboard Artist / Screenplay</strong> · Davinci Smartdeco<p>AI-driven production pipeline for visual storytelling assets and series scripts.</p></li>
+        <li><span class="when">2023 – 2024</span><strong>Graphic Designer</strong> · Samdam Romania<p>Print-ready mockups, product branding and digital banners for national and international clients.</p></li>
+        <li><span class="when">2022 – 2025</span><strong>3D Artist / Architect (volunteer)</strong> · Iasi.Travel Association<p>Historic landmarks recreated in 3D and optimized for 3D printing with municipal and cultural partners.</p></li>
+        <li><span class="when">2022 – 2023</span><strong>Senior Editor, Product Image</strong> · Amazon Romania<p>High-volume retouching, color correction and QA for global e-commerce images.</p></li>
+      </ol>
+      <p class="edu"><strong>Education:</strong> MSc Geography (Tourism &amp; Regional Development) and BSc Tourism Geography, Alexandru Ioan Cuza University, Iași. Both theses graded 10/10.</p>
     </section>
 
     <!-- ========== CONTACT ========== -->
     <section id="contact" class="section contact">
-      <h2>Contact</h2>
-      <p>Ai un proiect în minte? Scrie-mi.</p>
-      <!-- DE COMPLETAT: emailul și linkurile tale -->
-      <ul class="links">
-        <li><a href="mailto:EMAIL@exemplu.com">Email</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Instagram</a></li>
+      <h2>Let's work together</h2>
+      <p>Open to 3D, design and visual storytelling projects.</p>
+      <a class="btn" href="mailto:btudor.kon@gmail.com">btudor.kon@gmail.com</a>
+      <ul class="links-row">
+        <li><a href="https://www.artstation.com/btudor_kon" target="_blank" rel="noopener">ArtStation</a></li>
+        <li><a href="https://www.behance.net/btudor_kon" target="_blank" rel="noopener">Behance</a></li>
+        <li><a href="https://www.linkedin.com/in/tudor-boicu-5a2558230/" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
     </section>
 
   </main>
 
+  <script>
+    // Filtrele de deasupra proiectelor
+    document.querySelectorAll('.filters button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        document.querySelectorAll('.filters button').forEach(function (x) { x.classList.remove('on'); });
+        b.classList.add('on');
+        var f = b.dataset.f;
+        document.querySelectorAll('#work .card').forEach(function (c) {
+          c.classList.toggle('hidden', f !== 'all' && c.dataset.cat.split(' ').indexOf(f) === -1);
+        });
+      });
+    });
+  </script>
+
   <footer class="footer">
-    <p>© 2026 Tudor. Toate drepturile rezervate.</p>
+    <p>© 2026 Tudor Boicu · Iași, Romania</p>
   </footer>
 
 </body>
