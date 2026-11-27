@@ -40,3 +40,13 @@ Pentru video mai lungi, urcă-le pe YouTube (sau Instagram) și pune linkul de e
 
 Settings > Pages > Source: "Deploy from a branch" > Branch: `main`, folder `/ (root)` > Save.
 După 1-2 minute site-ul apare la https://tudorboicutws-cell.github.io/Portfolio/
+
+## Paginile de proiect (case study)
+
+În `projects/` sunt 3 pagini exemplu: `princely-court.html` (Environment), `game-props.html` (Game Art), `product-branding.html` (Graphic Design).
+Pozele lor merg în `assets/img/<nume-proiect>/` (ex: `assets/img/game-props/hero.jpg`, `asset-1.jpg`, `sketch.jpg`...). Numele exacte sunt în fiecare pagină, la `src="..."`.
+Ca să faci o pagină nouă: copiază una din ele, schimbă textele și pozele, apoi adaugă pe pagina principală un link `Case study →` spre ea.
+
+## Culori
+
+Sunt luate din logo-ul KON: bleumarin `#0d152e`, verde mentă `#2fd990`, albastru `#6ba8f6`. Se schimbă din primele rânduri din `style.css`.
