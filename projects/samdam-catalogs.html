@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samdam: Brand Catalogs &amp; Newsletters | Tudor Boicu</title>
+  <meta name="description" content="Product catalogs, brand presentations and newsletters for Hedgren, BergHOFF, Fritel and Samdam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="hero" style="padding-bottom:0">
+    <nav class="nav">
+      <a class="logo" href="../index.html"><img src="../assets/img/logo-kon.png" alt="KON logo">Tudor Boicu</a>
+      <ul>
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project">
+    <a class="back" href="../index.html#work">← All projects</a>
+    <p class="tag">Graphic Design · Product presentation · Print</p>
+    <h1>Samdam: Brand Catalogs &amp; Newsletters</h1>
+    <p class="lead">Product pages, brand stories and newsletters that present each collection clearly, from a backpack line to a full cookware range.</p>
+
+    <div class="hero-media"><img src="../assets/img/samdam-catalogs/hero.jpg" alt="Samdam: Brand Catalogs &amp; Newsletters"></div>
+
+    <dl class="meta">
+      <div><dt>Role</dt><dd>Graphic Designer</dd></div>
+      <div><dt>Client</dt><dd>Samdam Romania</dd></div>
+      <div><dt>Brands</dt><dd>Hedgren, BergHOFF, Fritel, Samdam</dd></div>
+      <div><dt>Tools</dt><dd>Photoshop, Illustrator</dd></div>
+    </dl>
+
+    <section class="text">
+      <h2>Overview</h2>
+      <p>Product design work for Samdam: catalog spreads for Hedgren bags and backpacks, BergHOFF cookware collections (Leo, Ron, Gem, Essentials), Fritel appliances and the Samdam brand values.</p>
+      <p>Each layout had to explain the product fast: hero photo, key features, color options and the story of the brand, ready for both print and email.</p>
+    </section>
+
+    <h2>Catalog pages</h2>
+      <div class="gallery portrait">
+        <a class="zoom" href="../assets/img/samdam-catalogs/38.jpg"><img src="../assets/img/samdam-catalogs/38-thumb.jpg" alt="Samdam catalog page 1" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/39.jpg"><img src="../assets/img/samdam-catalogs/39-thumb.jpg" alt="Samdam catalog page 2" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/40.jpg"><img src="../assets/img/samdam-catalogs/40-thumb.jpg" alt="Samdam catalog page 3" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/41.jpg"><img src="../assets/img/samdam-catalogs/41-thumb.jpg" alt="Samdam catalog page 4" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/42.jpg"><img src="../assets/img/samdam-catalogs/42-thumb.jpg" alt="Samdam catalog page 5" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/43.jpg"><img src="../assets/img/samdam-catalogs/43-thumb.jpg" alt="Samdam catalog page 6" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/44.jpg"><img src="../assets/img/samdam-catalogs/44-thumb.jpg" alt="Samdam catalog page 7" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/45.jpg"><img src="../assets/img/samdam-catalogs/45-thumb.jpg" alt="Samdam catalog page 8" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/46.jpg"><img src="../assets/img/samdam-catalogs/46-thumb.jpg" alt="Samdam catalog page 9" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/47.jpg"><img src="../assets/img/samdam-catalogs/47-thumb.jpg" alt="Samdam catalog page 10" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/48.jpg"><img src="../assets/img/samdam-catalogs/48-thumb.jpg" alt="Samdam catalog page 11" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/49.jpg"><img src="../assets/img/samdam-catalogs/49-thumb.jpg" alt="Samdam catalog page 12" loading="lazy"></a>
+        <a class="zoom" href="../assets/img/samdam-catalogs/50.jpg"><img src="../assets/img/samdam-catalogs/50-thumb.jpg" alt="Samdam catalog page 13" loading="lazy"></a>
+      </div>
+
+    <nav class="next">
+      <a href="samdam-banners.html">← Samdam: Web &amp; Email Campaigns</a>
+      <a href="princely-court.html">The Moldavian Princely Court →</a>
+    </nav>
+  </main>
+
+  <!-- Lightbox: click pe o poză o deschide mare -->
+  <div class="lightbox" id="lb" hidden><img alt=""><button aria-label="Close">×</button></div>
+  <script>
+    var lb = document.getElementById('lb'), lbImg = lb.querySelector('img');
+    document.querySelectorAll('.gallery a.zoom').forEach(function (a) {
+      a.addEventListener('click', function (e) { e.preventDefault(); lbImg.src = a.href; lbImg.alt = a.querySelector('img').alt; lb.hidden = false; });
+    });
+    lb.addEventListener('click', function () { lb.hidden = true; lbImg.src = ''; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') lb.click(); });
+  </script>
+
+  <footer class="footer">
+    <p>© 2026 Tudor Boicu · Iași, Romania</p>
+  </footer>
+</body>
+</html>

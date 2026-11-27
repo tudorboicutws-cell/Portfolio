@@ -26,7 +26,7 @@ Salvează câte o imagine (jpg, lată, de preferat 1600 px) în `assets/img/` cu
 | Heroes on Parallel Fronts | `heroes-parallel-fronts.jpg` |
 | Dimitrie Cantemir 300 | `cantemir-300.jpg` |
 
-Princely Court folosește deja imaginea de pe YouTube. Până pui o poză, cardul arată un fundal colorat.
+Princely Court folosește deja imaginea de pe YouTube. Proiectele Samdam au deja pozele (`assets/img/samdam-banners/` și `samdam-catalogs/`). Până pui o poză, cardul arată un fundal colorat.
 
 ## Cum adaugi un proiect
 
@@ -45,7 +45,7 @@ După 1-2 minute site-ul apare la https://tudorboicutws-cell.github.io/Portfolio
 
 ## Paginile de proiect (case study)
 
-În `projects/` sunt 3 pagini exemplu: `princely-court.html` (Environment), `game-props.html` (Game Art), `product-branding.html` (Graphic Design).
+În `projects/` sunt: `princely-court.html` (Environment), `game-props.html` (Game Art), `samdam-banners.html` și `samdam-catalogs.html` (Graphic Design, cu poze reale și galerie care se mărește la click).
 Pozele lor merg în `assets/img/<nume-proiect>/` (ex: `assets/img/game-props/hero.jpg`, `asset-1.jpg`, `sketch.jpg`...). Numele exacte sunt în fiecare pagină, la `src="..."`.
 Ca să faci o pagină nouă: copiază una din ele, schimbă textele și pozele, apoi adaugă pe pagina principală un link `Case study →` spre ea.
 
