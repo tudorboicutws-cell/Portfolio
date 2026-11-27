@@ -2,6 +2,8 @@
 
 Portofoliul lui Tudor: video, animație, design și copywriting.
 
+**Nu știi GitHub? Citește [GHID-EDITARE.md](GHID-EDITARE.md): totul pas cu pas, doar din browser.**
+
 ## Ce e în folder
 
 | Fișier | Ce face |
