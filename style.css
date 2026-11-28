@@ -234,8 +234,8 @@ section.chapter[hidden] { display: none; }
 .videos.lead-first figure:nth-child(2) video { flex: 1 1 0; min-height: 0; height: 100%; object-fit: cover; }
 @media (max-width: 640px) { .videos.lead-first figure:nth-child(2) video { flex: none; height: auto; } }
 @media (max-width: 640px) { .videos.lead-first { grid-template-columns: 1fr; } }
-.filters-break { flex-basis: 100%; height: 0; }
-.grid.cats { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.grid.cats { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; }
+.grid.cats .card .body { padding: 14px 16px; }
 .grid.cats .card h3 { font-size: 1.05rem; }
 .grid.cats .card .body > p:last-child { font-size: .85rem; }
 .feature { position: relative; margin-bottom: 24px; }
@@ -249,5 +249,13 @@ section.chapter[hidden] { display: none; }
 .feature-nav { position: absolute; bottom: 16px; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 1.4rem; line-height: 1; cursor: pointer; display: grid; place-items: center; padding: 0 0 3px; font-family: inherit; }
 .feature-nav:hover { border-color: var(--accent); color: var(--accent); }
 .feature-nav.prev { right: 62px; }
+.feature-main { position: relative; }
+.feature-thumbs { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-top: 12px; }
+.feature-thumbs button { position: relative; padding: 0; border: 2px solid var(--border); border-radius: 10px; overflow: hidden; aspect-ratio: 1; background: var(--surface); cursor: pointer; opacity: .6; font-family: inherit; transition: opacity .2s, border-color .2s; }
+.feature-thumbs button:hover { opacity: .9; }
+.feature-thumbs button.on { opacity: 1; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(47, 217, 144, .25); }
+.feature-thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.feature-thumbs span { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 6px 5px; font-size: .68rem; font-weight: 600; color: #fff; text-align: left; background: linear-gradient(transparent, rgba(0,0,0,.8)); line-height: 1.2; }
+@media (max-width: 700px) { .feature-thumbs { grid-template-columns: repeat(4, 1fr); } .feature-thumbs span { display: none; } }
 .feature-nav.next { right: 18px; }
 @media (max-width: 700px) { .feature-slide { grid-template-columns: 1fr; } .feature-slide .media { min-height: 0; aspect-ratio: 16/10; } }

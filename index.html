@@ -57,7 +57,6 @@
       <h2>Work</h2>
       <div class="filters" role="group" aria-label="Filter work">
         <button class="on" data-f="all">All</button>
-        <span class="filters-break" aria-hidden="true"></span>
         <button data-f="cat-heritage">SketchUp &amp; Heritage</button>
         <button data-f="cat-game-props">3D Game Props</button>
         <button data-f="cat-unreal">Unreal Engine 5</button>
@@ -68,9 +67,12 @@
         <!-- ascuns Twinkle: <button data-f="twinkle-star-social">Marketing</button> -->
       </div>
       <div class="feature" id="feature" aria-roledescription="carousel" aria-label="Featured categories">
+        <div class="feature-main">
         <a class="feature-slide" href="#"><div class="media"><img alt="" src=""></div><div class="body"><p class="tag"></p><h3></h3><p class="desc"></p><p class="feature-count"></p></div></a>
         <button class="feature-nav prev" aria-label="Previous">&#8249;</button>
         <button class="feature-nav next" aria-label="Next">&#8250;</button>
+        </div>
+        <div class="feature-thumbs" role="tablist" aria-label="Choose a category"></div>
       </div>
       <div class="grid cats" id="cats">
         <article class="card">
@@ -506,7 +508,14 @@
         img.src = c.querySelector('img').getAttribute('src'); img.alt = c.querySelector('h3').textContent;
         tag.textContent = c.querySelector('.tag').textContent; h.textContent = c.querySelector('h3').textContent;
         d.textContent = c.querySelector('.body > p:last-child').textContent; n.textContent = (i + 1) + ' / ' + cards.length;
+        thumbs.forEach(function (t, k) { t.classList.toggle('on', k === i); t.setAttribute('aria-selected', k === i); });
       }
+      var strip = fe.querySelector('.feature-thumbs'), thumbs = cards.map(function (c, k) {
+        var b = document.createElement('button'); b.type = 'button'; b.setAttribute('role', 'tab'); b.title = c.querySelector('h3').textContent;
+        b.innerHTML = '<img alt="" loading="lazy" src="' + c.querySelector('img').getAttribute('src') + '"><span></span>';
+        b.querySelector('span').textContent = c.querySelector('h3').textContent;
+        b.addEventListener('click', function () { go(k); }); strip.appendChild(b); return b;
+      });
       fe.querySelector('.prev').addEventListener('click', function () { go(i - 1); });
       fe.querySelector('.next').addEventListener('click', function () { go(i + 1); });
       go(0);
