@@ -55,7 +55,18 @@
 
     <section id="work" class="section">
       <h2>Work</h2>
-      <div class="grid cats">
+      <div class="filters" role="group" aria-label="Filter work">
+        <button class="on" data-f="all">All</button>
+        <button data-f="cat-heritage">SketchUp &amp; Heritage</button>
+        <button data-f="cat-game-props">3D Game Props</button>
+        <button data-f="cat-unreal">Unreal Engine 5</button>
+        <button data-f="cat-clo">CLO 3D</button>
+        <button data-f="illustrations">Illustrations</button>
+        <button data-f="cat-graphic-design">Graphic Design</button>
+        <button data-f="cat-treasure-hunt">Treasure Hunts</button>
+        <button data-f="twinkle-star-social">Marketing</button>
+      </div>
+      <div class="grid cats" id="cats">
         <article class="card">
           <a class="cover" href="projects/cat-heritage.html">
             <div class="media"><img src="assets/img/cultural-tourism-cover.jpg" alt="SketchUp &amp; Heritage 3D" loading="lazy"></div>
@@ -137,6 +148,268 @@
           </div>
         </article>
       </div>
+      <div class="grid" id="projs">
+        <article class="card proj" data-g="cat-heritage" hidden>
+          <a class="cover" href="projects/princely-court.html">
+            <div class="media"><img src="assets/img/princely-court-cover.jpg" alt="The Moldavian Princely Court of Iași" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Environment · 3D reconstruction · 3D printing</p>
+            <h3><a href="projects/princely-court.html">The Moldavian Princely Court of Iași</a></h3>
+            <p>Five evolutionary stages of the Princely Court of Iași, rebuilt in 3D from historical research and printed as physical models for an exhibition at the Palace of Culture.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-heritage" hidden>
+          <a class="cover" href="projects/cultural-tourism.html">
+            <div class="media"><img src="assets/img/cultural-tourism-cover.jpg" alt="Cultural Tourism in the Digital Age" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Environment · VR storytelling</p>
+            <h3><a href="projects/cultural-tourism.html">Cultural Tourism in the Digital Age</a></h3>
+            <p>Discovering the Royal Court of Iași through virtual reality: five historical stories turned into explorable 3D scenes.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-heritage" hidden>
+          <a class="cover" href="projects/palace-of-culture.html">
+            <div class="media"><img src="assets/img/palace-of-culture-cover.jpg" alt="Palace of Culture: Four Eras in 3D" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Environment · Architectural 3D</p>
+            <h3><a href="projects/palace-of-culture.html">Palace of Culture: Four Eras in 3D</a></h3>
+            <p>The building on the site of the Princely Court, modelled era by era, from the 1806 palace to the Palace of Culture we know today.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-heritage" hidden>
+          <a class="cover" href="projects/iasi-buildings.html">
+            <div class="media"><img src="assets/img/iasi-buildings-cover.jpg" alt="Historic Buildings of Iași" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Environment · Architectural 3D</p>
+            <h3><a href="projects/iasi-buildings.html">Historic Buildings of Iași</a></h3>
+            <p>Landmark buildings of Iași modelled in SketchUp, shown as clean clay renders and full-color versions.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-heritage" hidden>
+          <a class="cover" href="projects/heritage-prints.html">
+            <div class="media"><img src="assets/img/heritage-prints-cover.jpg" alt="3D-Printed Heritage Models" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">3D printing · Exhibition</p>
+            <h3><a href="projects/heritage-prints.html">3D-Printed Heritage Models</a></h3>
+            <p>From the 3D model to a real object: printed building models prepared for public display.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-game-props" hidden>
+          <a class="cover" href="projects/sig-mcx-spear.html">
+            <div class="media"><img src="assets/img/sig-mcx-spear-cover.jpg" alt="SIG MCX-Spear (EFT fan art)" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Game Art · Hard-surface prop</p>
+            <h3><a href="projects/sig-mcx-spear.html">SIG MCX-Spear (EFT fan art)</a></h3>
+            <p>A SIG MCX-Spear rifle, rebuilt from every reference I could find on Google, YouTube and in Escape from Tarkov.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-game-props" hidden>
+          <a class="cover" href="projects/digimon-figure.html">
+            <div class="media"><img src="assets/img/digimon-figure-cover.jpg" alt="Digimon Fan Art" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Game Art · Character model</p>
+            <h3><a href="projects/digimon-figure.html">Digimon Fan Art</a></h3>
+            <p>A Digimon character modelled, unwrapped and textured as a game-ready asset.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-game-props" hidden>
+          <a class="cover" href="projects/leica-camera.html">
+            <div class="media"><img src="assets/img/leica-camera-cover.jpg" alt="Leica × Pokémon Camera" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Game Art · Prop</p>
+            <h3><a href="projects/leica-camera.html">Leica × Pokémon Camera</a></h3>
+            <p>A Leica camera with a Pokémon twist, modelled and textured for real-time rendering.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-game-props" hidden>
+          <a class="cover" href="projects/genshin-polearm.html">
+            <div class="media"><img src="assets/img/genshin-polearm-cover.jpg" alt="Genshin Impact Polearm" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Game Art · Stylized weapon</p>
+            <h3><a href="projects/genshin-polearm.html">Genshin Impact Polearm</a></h3>
+            <p>A stylized polearm inspired by Genshin Impact, from wireframe and UVs to final textures.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-game-props" hidden>
+          <a class="cover" href="projects/cyberpunk-revolver.html">
+            <div class="media"><img src="assets/img/cyberpunk-revolver-cover.jpg" alt="Cyberpunk 2077 Revolver" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Game Art · Hard-surface prop</p>
+            <h3><a href="projects/cyberpunk-revolver.html">Cyberpunk 2077 Revolver</a></h3>
+            <p>A revolver inspired by Cyberpunk 2077, with beauty shots, wireframe, UVs and texture maps.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-game-props" hidden>
+          <a class="cover" href="projects/city-bus.html">
+            <div class="media"><img src="assets/img/city-bus-cover.jpg" alt="Iași City Bus" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Game Art · Vehicle</p>
+            <h3><a href="projects/city-bus.html">Iași City Bus</a></h3>
+            <p>A city bus in Iași colors, modelled as a game-ready vehicle.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-game-props" hidden>
+          <a class="cover" href="projects/terrain-geography.html">
+            <div class="media"><img src="assets/img/terrain-geography-cover.jpg" alt="Environment Geography" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Environment · Terrain</p>
+            <h3><a href="projects/terrain-geography.html">Environment Geography</a></h3>
+            <p>Terrain studies: mountains, coastlines and islands built with the eye of a geographer.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-unreal" hidden>
+          <a class="cover" href="projects/marnie-house.html">
+            <div class="media"><img src="assets/img/marnie-house-cover.jpg" alt="The Marsh House in Unreal Engine 5" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Environment · Unreal Engine 5</p>
+            <h3><a href="projects/marnie-house.html">The Marsh House in Unreal Engine 5</a></h3>
+            <p>Fan art of the Marsh House from Studio Ghibli&#x27;s When Marnie Was There, built as a real-time scene in Unreal Engine 5.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-unreal" hidden>
+          <a class="cover" href="projects/ue5-blockout.html">
+            <div class="media"><img src="assets/img/ue5-blockout-cover.jpg" alt="Unreal Engine 5: Level Blockout" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Game Art · Level design</p>
+            <h3><a href="projects/ue5-blockout.html">Unreal Engine 5: Level Blockout</a></h3>
+            <p>A playable space blocked out in Unreal Engine 5.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-unreal" hidden>
+          <a class="cover" href="projects/ue5-scifi.html">
+            <div class="media"><img src="assets/img/ue5-scifi-cover.jpg" alt="Unreal Engine 5: Sci-Fi Interior" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Environment · Unreal Engine 5</p>
+            <h3><a href="projects/ue5-scifi.html">Unreal Engine 5: Sci-Fi Interior</a></h3>
+            <p>A short cinematic of a sci-fi interior, lit and rendered in Unreal Engine 5.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-clo" hidden>
+          <a class="cover" href="projects/clo-1.html">
+            <div class="media"><img src="assets/img/clo-1-cover.jpg" alt="CLO 3D: Hoodie Outfit" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">3D Fashion · CLO 3D</p>
+            <h3><a href="projects/clo-1.html">CLO 3D: Hoodie Outfit</a></h3>
+            <p>A casual hoodie outfit designed and simulated in CLO 3D.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-clo" hidden>
+          <a class="cover" href="projects/clo-2.html">
+            <div class="media"><img src="assets/img/clo-2-cover.jpg" alt="CLO 3D: Streetwear Set" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">3D Fashion · CLO 3D</p>
+            <h3><a href="projects/clo-2.html">CLO 3D: Streetwear Set</a></h3>
+            <p>Jacket, trousers and tee designed as a set, with fabric simulation in CLO 3D.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-clo" hidden>
+          <a class="cover" href="projects/clo-3.html">
+            <div class="media"><img src="assets/img/clo-3-cover.jpg" alt="CLO 3D: Medieval Gown" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">3D Fashion · CLO 3D</p>
+            <h3><a href="projects/clo-3.html">CLO 3D: Medieval Gown</a></h3>
+            <p>A long medieval-style gown with sleeves and trims, simulated in CLO 3D.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-clo" hidden>
+          <a class="cover" href="projects/clo-4.html">
+            <div class="media"><img src="assets/img/clo-4-cover.jpg" alt="CLO 3D: Frieren Outfit" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">3D Fashion · CLO 3D</p>
+            <h3><a href="projects/clo-4.html">CLO 3D: Frieren Outfit</a></h3>
+            <p>A character outfit inspired by Frieren, built pattern by pattern in CLO 3D.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="illustrations" hidden>
+          <a class="cover" href="projects/illustrations.html">
+            <div class="media"><img src="assets/img/illustrations-cover.jpg" alt="2D Illustrations" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Illustration · Character art</p>
+            <h3><a href="projects/illustrations.html">2D Illustrations</a></h3>
+            <p>Characters, covers and scenes drawn digitally, from cozy interiors to dark fantasy.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-graphic-design" hidden>
+          <a class="cover" href="projects/samdam-banners.html">
+            <div class="media"><img src="assets/img/samdam-banners-cover.jpg" alt="Samdam: Web &amp; Email Campaigns" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Graphic Design · Web banners · Email marketing</p>
+            <h3><a href="projects/samdam-banners.html">Samdam: Web &amp; Email Campaigns</a></h3>
+            <p>Campaign visuals for a promotional products distributor: brand launches, seasonal offers and a loyalty program, in Romanian and Dutch.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-graphic-design" hidden>
+          <a class="cover" href="projects/samdam-catalogs.html">
+            <div class="media"><img src="assets/img/samdam-catalogs-cover.jpg" alt="Samdam: Brand Catalogs &amp; Newsletters" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Graphic Design · Product presentation · Print</p>
+            <h3><a href="projects/samdam-catalogs.html">Samdam: Brand Catalogs &amp; Newsletters</a></h3>
+            <p>Product pages, brand stories and newsletters that present each collection clearly, from a backpack line to a full cookware range.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-graphic-design" hidden>
+          <a class="cover" href="projects/hotel-flyers.html">
+            <div class="media"><img src="assets/img/hotel-flyers-cover.jpg" alt="Hotel Flyers, Iceland" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Graphic Design · Print</p>
+            <h3><a href="projects/hotel-flyers.html">Hotel Flyers, Iceland</a></h3>
+            <p>Information flyers for Boutique Hotel Anna and Hótel Skógafoss in Iceland: opening hours, services and QR codes, in a clean layout guests read in seconds.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-treasure-hunt" hidden>
+          <a class="cover" href="projects/knights-of-the-garden.html">
+            <div class="media"><img src="assets/img/knights-of-the-garden-cover.jpg" alt="The Knights of the Garden" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Storytelling · Treasure hunt</p>
+            <h3><a href="projects/knights-of-the-garden.html">The Knights of the Garden</a></h3>
+            <p>A story-driven treasure hunt that turns the Botanical Garden of Iași into a medieval realm where plants become characters, guardians and guides.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="cat-treasure-hunt" hidden>
+          <a class="cover" href="projects/heroes-parallel-fronts.html">
+            <div class="media"><img src="assets/img/heroes-parallel-fronts-cover.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Storytelling · Graphic design</p>
+            <h3><a href="projects/heroes-parallel-fronts.html">Heroes on Parallel Fronts</a></h3>
+            <p>An exploration tour and outdoor information panels along a WWII commemorative route through the Letea Forest and Rediu, built on archival research.</p>
+          </div>
+        </article>
+        <article class="card proj" data-g="twinkle-star-social" hidden>
+          <a class="cover" href="projects/twinkle-star-social.html">
+            <div class="media"><img src="assets/img/twinkle-star-social-cover.jpg" alt="Twinkle Star: Social Media" loading="lazy"></div>
+          </a>
+          <div class="body">
+            <p class="tag">Marketing · Social media</p>
+            <h3><a href="projects/twinkle-star-social.html">Twinkle Star: Social Media</a></h3>
+            <p>Carousels, campaign posts and video thumbnails for Twinkle Star, a Cambridge English exam centre in Iași.</p>
+          </div>
+        </article>
+      </div>
       <div class="bars inline">
     <div class="bar work">
       <p>Companies I have worked with</p>
@@ -200,6 +473,19 @@
     </section>
 
   </main>
+
+  <script>
+    // Filtrele de la Work: All = categoriile, restul = proiectele categoriei
+    (function () {
+      var btns = document.querySelectorAll('#work .filters button'), cats = document.getElementById('cats'), projs = document.querySelectorAll('#projs .proj');
+      function show(f) {
+        btns.forEach(function (b) { b.classList.toggle('on', b.dataset.f === f); });
+        cats.hidden = f !== 'all';
+        projs.forEach(function (c) { c.hidden = c.dataset.g !== f; });
+      }
+      btns.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.f); }); });
+    })();
+  </script>
 
   <footer class="footer">
     <p>© 2026 Tudor Boicu · Iași, Romania</p>
