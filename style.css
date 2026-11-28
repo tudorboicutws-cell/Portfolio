@@ -259,3 +259,4 @@ section.chapter[hidden] { display: none; }
 @media (max-width: 700px) { .feature-thumbs { grid-template-columns: repeat(4, 1fr); } .feature-thumbs span { display: none; } }
 .feature-nav.next { right: 18px; }
 @media (max-width: 700px) { .feature-slide { grid-template-columns: 1fr; } .feature-slide .media { min-height: 0; aspect-ratio: 16/10; } }
+#cats { display: none !important; } /* cardurile raman doar ca sursa pentru carusel */
