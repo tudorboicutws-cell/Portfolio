@@ -38,7 +38,7 @@
     </dl>
     <div class="tools"><span>For</span><img src="../assets/logos/twinkle-star-portfolio.png" alt="Twinkle Star" title="Twinkle Star"></div>
 
-    <nav class="toc" aria-label="Chapters"><a href="#ch1"><span>01</span>Cambridge exam tips carousel</a><a href="#ch2"><span>02</span>Halloween: Trick or Truth</a><a href="#ch3"><span>03</span>Easter</a><a href="#ch4"><span>04</span>Robotics workshop</a><a href="#ch5"><span>05</span>New groups campaign</a><a href="#ch6"><span>06</span>Video thumbnails</a><a href="#ch7"><span>07</span>Carousel template</a></nav>
+    <nav class="toc tabs" aria-label="Chapters"><a href="#ch1" class="on"><span>01</span>Cambridge exam tips carousel</a><a href="#ch2"><span>02</span>Halloween: Trick or Truth</a><a href="#ch3"><span>03</span>Easter</a><a href="#ch4"><span>04</span>Robotics workshop</a><a href="#ch5"><span>05</span>New groups campaign</a><a href="#ch6"><span>06</span>Video thumbnails</a><a href="#ch7"><span>07</span>Carousel template</a></nav>
     <section class="chapter" id="ch1">
     <p class="chapter-no">Chapter 1</p>
     <h2>Cambridge exam tips carousel</h2>
@@ -58,7 +58,7 @@
       <a class="zoom" href="../assets/img/twinkle-star-social/ch1-12.jpg"><img src="../assets/img/twinkle-star-social/ch1-12-thumb.jpg" alt="Cambridge exam tips carousel" loading="lazy"></a>
     </div>
     </section>
-    <section class="chapter" id="ch2">
+    <section class="chapter" id="ch2" hidden>
     <p class="chapter-no">Chapter 2</p>
     <h2>Halloween: Trick or Truth</h2>
 
@@ -75,7 +75,7 @@
       <a class="zoom" href="../assets/img/twinkle-star-social/ch2-10.jpg"><img src="../assets/img/twinkle-star-social/ch2-10-thumb.jpg" alt="Halloween: Trick or Truth" loading="lazy"></a>
     </div>
     </section>
-    <section class="chapter" id="ch3">
+    <section class="chapter" id="ch3" hidden>
     <p class="chapter-no">Chapter 3</p>
     <h2>Easter</h2>
 
@@ -86,7 +86,7 @@
       <a class="zoom" href="../assets/img/twinkle-star-social/ch3-04.jpg"><img src="../assets/img/twinkle-star-social/ch3-04-thumb.jpg" alt="Easter" loading="lazy"></a>
     </div>
     </section>
-    <section class="chapter" id="ch4">
+    <section class="chapter" id="ch4" hidden>
     <p class="chapter-no">Chapter 4</p>
     <h2>Robotics workshop</h2>
 
@@ -97,7 +97,7 @@
       <a class="zoom" href="../assets/img/twinkle-star-social/ch4-04.jpg"><img src="../assets/img/twinkle-star-social/ch4-04-thumb.jpg" alt="Robotics workshop" loading="lazy"></a>
     </div>
     </section>
-    <section class="chapter" id="ch5">
+    <section class="chapter" id="ch5" hidden>
     <p class="chapter-no">Chapter 5</p>
     <h2>New groups campaign</h2>
 
@@ -116,7 +116,7 @@
       <a class="zoom" href="../assets/img/twinkle-star-social/ch5-12.jpg"><img src="../assets/img/twinkle-star-social/ch5-12-thumb.jpg" alt="New groups campaign" loading="lazy"></a>
     </div>
     </section>
-    <section class="chapter" id="ch6">
+    <section class="chapter" id="ch6" hidden>
     <p class="chapter-no">Chapter 6</p>
     <h2>Video thumbnails</h2>
 
@@ -135,7 +135,7 @@
       <a class="zoom" href="../assets/img/twinkle-star-social/ch6-12.jpg"><img src="../assets/img/twinkle-star-social/ch6-12-thumb.jpg" alt="Video thumbnails" loading="lazy"></a>
     </div>
     </section>
-    <section class="chapter" id="ch7">
+    <section class="chapter" id="ch7" hidden>
     <p class="chapter-no">Chapter 7</p>
     <h2>Carousel template</h2>
 
@@ -159,9 +159,10 @@
 
   <div class="lightbox" id="lb" hidden><button class="lb-prev" aria-label="Previous">‹</button><img alt=""><button class="lb-next" aria-label="Next">›</button></div>
   <script>
-  (function(){var lb=document.getElementById('lb'),img=lb.querySelector('img'),list=[].slice.call(document.querySelectorAll('a.zoom')),i=0;
+  (function(){var lb=document.getElementById('lb'),img=lb.querySelector('img'),all=[].slice.call(document.querySelectorAll('a.zoom')),list=all,i=0;
+  [].slice.call(document.querySelectorAll('.toc.tabs a')).forEach(function(t){t.addEventListener('click',function(e){e.preventDefault();document.querySelectorAll('.toc.tabs a').forEach(function(x){x.classList.toggle('on',x===t);});document.querySelectorAll('section.chapter').forEach(function(c){c.hidden='#'+c.id!==t.getAttribute('href');});});});
   function show(n){i=(n+list.length)%list.length;img.src=list[i].href;img.alt=list[i].querySelector('img').alt;lb.hidden=false;}
-  list.forEach(function(a,n){a.addEventListener('click',function(e){e.preventDefault();show(n);});});
+  all.forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();list=all.filter(function(x){return x.offsetParent!==null;});show(list.indexOf(a));});});
   lb.querySelector('.lb-prev').onclick=function(e){e.stopPropagation();show(i-1);};
   lb.querySelector('.lb-next').onclick=function(e){e.stopPropagation();show(i+1);};
   lb.addEventListener('click',function(){lb.hidden=true;img.src='';});
