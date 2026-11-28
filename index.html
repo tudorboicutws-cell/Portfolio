@@ -68,9 +68,12 @@
       </div>
       <div class="feature" id="feature" aria-roledescription="carousel" aria-label="Featured categories">
         <div class="feature-main">
-        <a class="feature-slide" href="#"><div class="media"><img alt="" src=""></div><div class="body"><p class="tag"></p><h3></h3><p class="desc"></p><p class="feature-count"></p></div></a>
-        <button class="feature-nav prev" aria-label="Previous">&#8249;</button>
-        <button class="feature-nav next" aria-label="Next">&#8250;</button>
+        <a class="feature-slide" href="#"><div class="media"><img alt="" src=""></div><div class="body"><p class="tag"></p><h3></h3><p class="desc"></p></div></a>
+        <div class="feature-ctrl">
+          <button class="feature-nav prev" aria-label="Previous"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <span class="feature-count"></span>
+          <button class="feature-nav next" aria-label="Next"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
         </div>
         <div class="feature-thumbs" role="tablist" aria-label="Choose a category"></div>
       </div>
@@ -501,7 +504,7 @@
     // Caruselul mare de la Work: arata pe rand fiecare categorie
     (function () {
       var fe = document.getElementById('feature'), cards = [].slice.call(document.querySelectorAll('#cats > .card')), i = 0;
-      var a = fe.querySelector('.feature-slide'), img = a.querySelector('img'), tag = a.querySelector('.tag'), h = a.querySelector('h3'), d = a.querySelector('.desc'), n = a.querySelector('.feature-count');
+      var a = fe.querySelector('.feature-slide'), img = a.querySelector('img'), tag = a.querySelector('.tag'), h = a.querySelector('h3'), d = a.querySelector('.desc'), n = fe.querySelector('.feature-count');
       function go(k) {
         i = (k + cards.length) % cards.length; var c = cards[i];
         a.href = c.querySelector('a').getAttribute('href');
