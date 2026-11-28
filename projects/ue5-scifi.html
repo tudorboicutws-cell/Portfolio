@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unreal Engine 5: Sci-Fi Interior | Tudor Boicu</title>
+  <meta name="description" content="Campaign visuals for a promotional products distributor: brand launches, seasonal offers and a loyalty program, in Romanian and Dutch.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="hero" style="padding-bottom:0">
+    <nav class="nav">
+      <a class="logo" href="../index.html"><img src="../assets/img/logo-kon.png" alt="KON logo">Tudor Boicu</a>
+      <ul>
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project">
+    <a class="back" href="cat-unreal.html">← Unreal Engine 5</a>
+    <p class="tag">Environment · Unreal Engine 5</p>
+    <h1>Unreal Engine 5: Sci-Fi Interior</h1>
+    <p class="lead">A short cinematic of a sci-fi interior, lit and rendered in Unreal Engine 5.</p>
+
+    <a class="hero-img zoom" href="../assets/img/ue5-scifi/hero.jpg"><img src="../assets/img/ue5-scifi/hero.jpg" alt="Unreal Engine 5: Sci-Fi Interior"></a>
+
+    <dl class="meta">
+      <div><dt>Role</dt><dd>3D Artist</dd></div>
+    </dl>
+    <div class="tools"><span>Made with</span><img src="../assets/logos/blender.png" alt="Blender" title="Blender"><img src="../assets/logos/marmoset-toolbag.png" alt="Marmoset Toolbag" title="Marmoset Toolbag"><img src="../assets/logos/photoshop.png" alt="Photoshop" title="Photoshop"><img src="../assets/logos/rizom-uv.png" alt="RizomUV" title="RizomUV"><img src="../assets/logos/substance-painter.png" alt="Substance Painter" title="Substance Painter"><img src="../assets/logos/unreal-engine-5.png" alt="Unreal Engine 5" title="Unreal Engine 5"></div>
+
+    <h2>Video</h2>
+    <div class="videos">
+      <figure><video src="../assets/video/ue5-3.mp4" poster="../assets/video/ue5-3.jpg" controls playsinline preload="none"></video><figcaption>Cinematic (with sound)</figcaption></figure>
+    </div>
+
+    <nav class="next">
+      <a href="ue5-blockout.html">← Unreal Engine 5: Level Blockout</a>
+      <a href="marnie-house.html">The Marsh House in Unreal Engine 5 →</a>
+    </nav>
+  </main>
+
+  <div class="lightbox" id="lb" hidden><button class="lb-prev" aria-label="Previous">‹</button><img alt=""><button class="lb-next" aria-label="Next">›</button></div>
+  <script>
+  (function(){var lb=document.getElementById('lb'),img=lb.querySelector('img'),list=[].slice.call(document.querySelectorAll('a.zoom')),i=0;
+  function show(n){i=(n+list.length)%list.length;img.src=list[i].href;img.alt=list[i].querySelector('img').alt;lb.hidden=false;}
+  list.forEach(function(a,n){a.addEventListener('click',function(e){e.preventDefault();show(n);});});
+  lb.querySelector('.lb-prev').onclick=function(e){e.stopPropagation();show(i-1);};
+  lb.querySelector('.lb-next').onclick=function(e){e.stopPropagation();show(i+1);};
+  lb.addEventListener('click',function(){lb.hidden=true;img.src='';});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.click();if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1);});})();
+  </script>
+
+  <footer class="footer">
+    <p>© 2026 Tudor Boicu · Iași, Romania</p>
+  </footer>
+</body>
+</html>
