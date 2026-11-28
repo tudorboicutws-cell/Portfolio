@@ -21,7 +21,6 @@ Fiecare proiect are:
 - clipurile, unde există, în `assets/video/`.
 
 Logo-urile programelor și ale firmelor sunt în `assets/logos/`.
-REVIVE și Dimitrie Cantemir 300 nu au încă poze: pune `assets/img/revive.jpg` și `assets/img/cantemir-300.jpg`.
 
 ## Cum adaugi un proiect
 
