@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heroes on Parallel Fronts | Tudor Boicu</title>
+  <meta name="description" content="An exploration tour and outdoor information panels along a WWII commemorative route through the Letea Forest and Rediu, built on archival research.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="hero" style="padding-bottom:0">
+    <nav class="nav">
+      <a class="logo" href="../index.html"><img src="../assets/img/logo-kon.png" alt="KON logo">Tudor Boicu</a>
+      <ul>
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project">
+    <a class="back" href="../index.html#work">← All projects</a>
+    <p class="tag">Storytelling · Graphic design</p>
+    <h1>Heroes on Parallel Fronts</h1>
+    <p class="lead">An exploration tour and outdoor information panels along a WWII commemorative route through the Letea Forest and Rediu, built on archival research.</p>
+
+    <a class="hero-img zoom" href="../assets/img/heroes-parallel-fronts/hero.jpg"><img src="../assets/img/heroes-parallel-fronts/hero.jpg" alt="Heroes on Parallel Fronts"></a>
+
+    <dl class="meta">
+      <div><dt>Role</dt><dd>Graphic Designer, Storyteller</dd></div>
+      <div><dt>Platform</dt><dd>Questo</dd></div>
+    </dl>
+    <div class="tools"><span>Made with</span><img src="../assets/logos/adobe-illustrator.png" alt="Illustrator" title="Illustrator"><img src="../assets/logos/figma.png" alt="Figma" title="Figma"><img src="../assets/logos/photoshop.png" alt="Photoshop" title="Photoshop"></div>
+    <div class="tools"><span>For</span><img src="../assets/logos/questo.png" alt="Questo" title="Questo"></div>
+
+    <p class="pill-links"><a href="https://questoapp.com/ro/rediu-walking-tours/eroi-pe-fronturi-paralele-1" target="_blank" rel="noopener">Questo tour</a></p>
+    <div class="masonry">
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-01.jpg"><img src="../assets/img/heroes-parallel-fronts/img-01-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-02.jpg"><img src="../assets/img/heroes-parallel-fronts/img-02-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-03.jpg"><img src="../assets/img/heroes-parallel-fronts/img-03-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-04.jpg"><img src="../assets/img/heroes-parallel-fronts/img-04-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-05.jpg"><img src="../assets/img/heroes-parallel-fronts/img-05-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-06.jpg"><img src="../assets/img/heroes-parallel-fronts/img-06-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-07.jpg"><img src="../assets/img/heroes-parallel-fronts/img-07-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-08.jpg"><img src="../assets/img/heroes-parallel-fronts/img-08-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-09.jpg"><img src="../assets/img/heroes-parallel-fronts/img-09-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-10.jpg"><img src="../assets/img/heroes-parallel-fronts/img-10-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-11.jpg"><img src="../assets/img/heroes-parallel-fronts/img-11-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+      <a class="zoom" href="../assets/img/heroes-parallel-fronts/img-12.jpg"><img src="../assets/img/heroes-parallel-fronts/img-12-thumb.jpg" alt="Heroes on Parallel Fronts" loading="lazy"></a>
+    </div>
+
+    <nav class="next">
+      <a href="knights-of-the-garden.html">← The Knights of the Garden</a>
+      <a href="twinkle-star-social.html">Twinkle Star: Social Media →</a>
+    </nav>
+  </main>
+
+  <div class="lightbox" id="lb" hidden><button class="lb-prev" aria-label="Previous">‹</button><img alt=""><button class="lb-next" aria-label="Next">›</button></div>
+  <script>
+  (function(){var lb=document.getElementById('lb'),img=lb.querySelector('img'),list=[].slice.call(document.querySelectorAll('a.zoom')),i=0;
+  function show(n){i=(n+list.length)%list.length;img.src=list[i].href;img.alt=list[i].querySelector('img').alt;lb.hidden=false;}
+  list.forEach(function(a,n){a.addEventListener('click',function(e){e.preventDefault();show(n);});});
+  lb.querySelector('.lb-prev').onclick=function(e){e.stopPropagation();show(i-1);};
+  lb.querySelector('.lb-next').onclick=function(e){e.stopPropagation();show(i+1);};
+  lb.addEventListener('click',function(){lb.hidden=true;img.src='';});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')lb.click();if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1);});})();
+  </script>
+
+  <footer class="footer">
+    <p>© 2026 Tudor Boicu · Iași, Romania</p>
+  </footer>
+</body>
+</html>

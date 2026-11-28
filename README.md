@@ -15,18 +15,13 @@ Portofoliul lui Tudor Boicu: 3D environment, game art, graphic design și visual
 
 ## Pozele proiectelor
 
-Salvează câte o imagine (jpg, lată, de preferat 1600 px) în `assets/img/` cu exact aceste nume:
+Fiecare proiect are:
+- o poză de card pe pagina principală: `assets/img/<proiect>-cover.jpg` (960 x 600 px)
+- un folder cu pozele lui: `assets/img/<proiect>/` (`hero.jpg` sus, `img-01.jpg`, `img-02.jpg`... în galerie, `ch1-00.jpg`, `ch1-01.jpg`... la capitole). Fiecare poză are și o variantă mică `-thumb.jpg`.
+- clipurile, unde există, în `assets/video/`.
 
-| Proiect | Nume fișier |
-|---|---|
-| Cultural Tourism in the Digital Age | `cultural-tourism.jpg` |
-| 3D Assets for Video Games | `game-assets.jpg` |
-| The Knights of the Garden | `knights-of-the-garden.jpg` |
-| REVIVE: Historic Towns | `revive.jpg` |
-| Heroes on Parallel Fronts | `heroes-parallel-fronts.jpg` |
-| Dimitrie Cantemir 300 | `cantemir-300.jpg` |
-
-Princely Court folosește deja imaginea de pe YouTube. Proiectele Samdam au deja pozele (`assets/img/samdam-banners/` și `samdam-catalogs/`). Până pui o poză, cardul arată un fundal colorat.
+Logo-urile programelor și ale firmelor sunt în `assets/logos/`.
+REVIVE și Dimitrie Cantemir 300 nu au încă poze: pune `assets/img/revive.jpg` și `assets/img/cantemir-300.jpg`.
 
 ## Cum adaugi un proiect
 
@@ -45,9 +40,9 @@ După 1-2 minute site-ul apare la https://tudorboicutws-cell.github.io/Portfolio
 
 ## Paginile de proiect (case study)
 
-În `projects/` sunt: `princely-court.html` (Environment), `game-props.html` (Game Art), `samdam-banners.html` și `samdam-catalogs.html` (Graphic Design, cu poze reale și galerie care se mărește la click).
-Pozele lor merg în `assets/img/<nume-proiect>/` (ex: `assets/img/game-props/hero.jpg`, `asset-1.jpg`, `sketch.jpg`...). Numele exacte sunt în fiecare pagină, la `src="..."`.
-Ca să faci o pagină nouă: copiază una din ele, schimbă textele și pozele, apoi adaugă pe pagina principală un link `Case study →` spre ea.
+În `projects/` e câte o pagină pentru fiecare proiect din folderul Portofoliu (26 de pagini): Princely Court, Cultural Tourism, Palace of Culture, cele 6 game props, Unreal Engine 5, CLO 3D, Samdam, flyere, ilustrații, Treasure Hunt și Twinkle Star.
+Paginile cu sub-foldere au **capitole** (de exemplu Princely Court, etapele 1-5). Sus pe fiecare pagină sunt logo-urile programelor folosite.
+Ca să faci o pagină nouă: copiază una asemănătoare (de exemplu `projects/city-bus.html`), schimbă textele și pozele, apoi adaugă pe pagina principală un card spre ea.
 
 ## Culori
 

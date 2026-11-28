@@ -34,16 +34,16 @@ Orice salvare se numește **Commit**. După fiecare Commit, site-ul se actualize
 
 ## 2. Pui poze (cel mai des o să faci asta)
 
-1. În repo, intră în folderul **`assets`** > **`img`** > folderul proiectului (de exemplu `game-props`).
+1. În repo, intră în folderul **`assets`** > **`img`** > folderul proiectului (de exemplu `city-bus`).
 2. Sus în dreapta: **Add file** > **Upload files**.
 3. Trage pozele în pagină.
-   **Important:** pozele trebuie să aibă exact numele cerut de pagină (de exemplu `hero.jpg`, `asset-1.jpg`).
+   **Important:** pozele trebuie să aibă exact numele cerut de pagină (de exemplu `hero.jpg`, `img-01.jpg`).
    Lista de nume e în `README.md` și în fiecare pagină de proiect.
 4. Jos apasă **Commit changes**.
 
 Sfaturi pentru poze:
 - Format **.jpg**, lățime în jur de **1600 px**, sub **1 MB** fiecare (le micșorezi gratuit pe squoosh.app).
-- Numele: litere mici, fără spații și fără diacritice (`asset-1.jpg`, nu `Asset 1 final.JPG`).
+- Numele: litere mici, fără spații și fără diacritice (`img-01.jpg`, nu `Asset 1 final.JPG`).
 - Ca să **înlocuiești** o poză, urci una nouă cu **același nume**. GitHub o suprascrie.
 
 ---
@@ -59,7 +59,7 @@ Sfaturi pentru poze:
 
 ## 4. Faci o pagină de proiect nouă
 
-1. Intră în folderul `projects` și deschide pagina cea mai apropiată ca tip (de exemplu `game-props.html`).
+1. Intră în folderul `projects` și deschide pagina cea mai apropiată ca tip (de exemplu `city-bus.html`).
 2. Apasă pe iconița **Copy raw file** (două pătrățele, sus în dreapta) ca să copiezi tot.
 3. Întoarce-te în folderul `projects` > **Add file** > **Create new file**.
 4. Scrie numele, de exemplu `tavern-scene.html` (litere mici, cu cratimă), și lipește tot (Ctrl + V).
