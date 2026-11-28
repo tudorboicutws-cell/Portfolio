@@ -229,5 +229,6 @@ h2 { font-size: 2rem; margin-bottom: 28px; }
 section.chapter[hidden] { display: none; }
 .videos.lead-first figure:first-child { grid-column: 1 / -1; }
 .videos.lead-first figure:first-child video { max-height: 80vh; }
-.videos.lead-first { grid-template-columns: repeat(3, 1fr); }
+.videos.lead-first { grid-template-columns: 2fr 1fr; align-items: start; }
+.videos.lead-first figure:nth-child(2) { grid-row: span 2; }
 @media (max-width: 640px) { .videos.lead-first { grid-template-columns: 1fr; } }
