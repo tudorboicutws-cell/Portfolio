@@ -172,7 +172,8 @@ h2 { font-size: 2rem; margin-bottom: 28px; }
 
 /* ===== Barele cu logo-uri de sub titlu ===== */
 .bars { max-width: 1120px; margin: -40px auto 24px; padding: 0 16px; display: grid; gap: 14px; }
-.bar { display: flex; align-items: center; gap: 20px; padding: 16px 22px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.bar { display: flex; align-items: center; gap: 20px; padding: 18px 0; border-top: 1px solid var(--border); }
+.bars.inline { margin: 36px 0 0; padding: 0; }
 .bar p { color: var(--muted); font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; flex: 0 0 150px; }
 .bar ul { list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
 .bar img { display: block; height: 30px; width: auto; max-width: 96px; object-fit: contain; }
