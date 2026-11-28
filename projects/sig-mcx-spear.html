@@ -38,11 +38,11 @@
     <div class="tools"><span>Made with</span><img src="../assets/logos/blender.png" alt="Blender" title="Blender"><img src="../assets/logos/marmoset-toolbag.png" alt="Marmoset Toolbag" title="Marmoset Toolbag"><img src="../assets/logos/maya.png" alt="Maya" title="Maya"><img src="../assets/logos/photoshop.png" alt="Photoshop" title="Photoshop"><img src="../assets/logos/rizom-uv.png" alt="RizomUV" title="RizomUV"><img src="../assets/logos/substance-painter.png" alt="Substance Painter" title="Substance Painter"></div>
 
     <h2>Video</h2>
-    <div class="videos">
+    <div class="videos lead-first">
+      <figure><video src="../assets/video/prop1-bullets.mp4" poster="../assets/video/prop1-bullets.jpg" controls playsinline preload="none" muted loop></video><figcaption>Bullets</figcaption></figure>
       <figure><video src="../assets/video/prop1-turntable.mp4" poster="../assets/video/prop1-turntable.jpg" controls playsinline preload="none" muted loop></video><figcaption>Turntable</figcaption></figure>
       <figure><video src="../assets/video/prop1-round.mp4" poster="../assets/video/prop1-round.jpg" controls playsinline preload="none" muted loop></video><figcaption>Rotation</figcaption></figure>
       <figure><video src="../assets/video/prop1-sniper.mp4" poster="../assets/video/prop1-sniper.jpg" controls playsinline preload="none" muted loop></video><figcaption>Scope detail</figcaption></figure>
-      <figure><video src="../assets/video/prop1-bullets.mp4" poster="../assets/video/prop1-bullets.jpg" controls playsinline preload="none" muted loop></video><figcaption>Bullets</figcaption></figure>
     </div>
     <h2>Gallery</h2>
     <div class="masonry">
@@ -64,9 +64,10 @@
 
   <div class="lightbox" id="lb" hidden><button class="lb-prev" aria-label="Previous">‹</button><img alt=""><button class="lb-next" aria-label="Next">›</button></div>
   <script>
-  (function(){var lb=document.getElementById('lb'),img=lb.querySelector('img'),list=[].slice.call(document.querySelectorAll('a.zoom')),i=0;
+  (function(){var lb=document.getElementById('lb'),img=lb.querySelector('img'),all=[].slice.call(document.querySelectorAll('a.zoom')),list=all,i=0;
+  [].slice.call(document.querySelectorAll('.toc.tabs a')).forEach(function(t){t.addEventListener('click',function(e){e.preventDefault();document.querySelectorAll('.toc.tabs a').forEach(function(x){x.classList.toggle('on',x===t);});document.querySelectorAll('section.chapter').forEach(function(c){c.hidden='#'+c.id!==t.getAttribute('href');});});});
   function show(n){i=(n+list.length)%list.length;img.src=list[i].href;img.alt=list[i].querySelector('img').alt;lb.hidden=false;}
-  list.forEach(function(a,n){a.addEventListener('click',function(e){e.preventDefault();show(n);});});
+  all.forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();list=all.filter(function(x){return x.offsetParent!==null;});show(list.indexOf(a));});});
   lb.querySelector('.lb-prev').onclick=function(e){e.stopPropagation();show(i-1);};
   lb.querySelector('.lb-next').onclick=function(e){e.stopPropagation();show(i+1);};
   lb.addEventListener('click',function(){lb.hidden=true;img.src='';});
