@@ -213,3 +213,12 @@ h2 { font-size: 2rem; margin-bottom: 28px; }
 .lightbox .lb-prev, .lightbox .lb-next { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(19,29,59,.8); border: 1px solid var(--border); color: #fff; font-size: 2rem; width: 48px; height: 64px; border-radius: 10px; cursor: pointer; }
 .lightbox .lb-prev { left: 12px; }
 .lightbox .lb-next { right: 12px; }
+
+/* Programe grupate pe categorii */
+.bar.soft { flex-direction: column; align-items: flex-start; gap: 14px; }
+.bar.soft > p { flex: none; }
+.sw-wrap { overflow: hidden; width: 100%; }
+.sw { display: flex; flex-wrap: wrap; gap: 18px 0; margin-left: -23px; }
+.sw-group { padding: 0 22px; border-left: 1px solid var(--border); }
+.sw-group span { display: block; color: var(--text); font-size: .72rem; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; opacity: .8; margin-bottom: 10px; }
+.sw-group ul { list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
